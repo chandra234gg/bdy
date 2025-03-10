@@ -1,0 +1,75 @@
+body {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Full-screen black screen before decoration */
+.black-screen {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Room background - Fixed size and positioning */
+.room-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url('images/room.jpg') no-repeat center center;
+    background-size: contain;
+    background-color: black; /* Fills any empty space */
+}
+
+
+
+
+
+
+/* Cake positioning */
+.cake-container {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+/* Cake image size */
+#cake {
+    width: 200px;
+}
+
+/* Countdown text */
+#countdown-text {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Countdown numbers */
+#countdown {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Firework effect */
+@keyframes popEffect {
+    0% { transform: scale(0); opacity: 1; }
+    100% { transform: scale(1.5); opacity: 0; }
+}
+
+.firework {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    animation: popEffect 0.5s ease-out; /* Fixed */
+}
