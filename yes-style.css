@@ -49,12 +49,14 @@ body {
 /* Countdown text */
 #countdown-text {
     font-size: 20px;
+    background: gray;
     margin-top: 10px;
 }
 
 /* Countdown numbers */
 #countdown {
     font-size: 50px;
+    background: gray;
     font-weight: bold;
     margin-top: 5px;
 }
